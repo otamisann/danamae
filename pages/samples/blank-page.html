@@ -92,8 +92,23 @@
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-file-document menu-icon"></i> </span> <span class="menu-title">Employees</span> </a>
-            </li>
+              <a class="nav-link" data-toggle="collapse" href="#emp" aria-expanded="false"
+                  aria-controls="collapseExample"> <span class="icon-bg"> <i
+                          class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                      class="menu-title">Employees</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+              </a>
+              <div class="collapse" id="emp">
+                  <ul class="nav flex-column sub-menu">
+                      <li class="nav-item"> <a class="nav-link"
+                              href="../samples/bank-list-of-employees.html">List of Employees</a> </li>
+                      <li class="nav-item"> <a class="nav-link"
+                              href="../samples/bank-add-employees.html">Add Employee</a> </li>
+                      <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Update
+                              Employee</a> </li>
+                      <!-- wala pa, wala sa docu -->
+                  </ul>
+              </div>
+          </li>
 
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#docu" aria-expanded="false" aria-controls="collapseExample"> <span class="icon-bg"> <i class="mdi mdi-account-multiple menu-icon"></i> </span> <span class="menu-title">Documents</span> <i class="mdi mdi-chevron-right menu-arrow"></i> </a>
@@ -119,9 +134,11 @@
               <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-settings menu-icon"></i> </span> <span class="menu-title">Settings</span> </a>
               </li>
 
-              <li class="nav-item btn-danger">
-                <a class="nav-link" href="bank-login.html" > <span class="icon-bg"> <i class="mdi mdi-logout menu-icon"></i> </span> <span class="menu-title" style="color: azure;">Logout</span> </a>
-              </li>
+              <li class="nav-item documentation-link">
+                <a class="nav-link" href="../../index.html"> <span class="icon-bg"> <i
+                            class="mdi mdi-logout menu-icon"></i> </span> <span
+                        class="menu-title">Logout</span> </a>
+            </li>
 
              
 
