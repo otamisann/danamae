@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:33 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bank Courier</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../../node_modules/icheck/skins/all.css" />
+    <link rel="stylesheet" href="../../node_modules/select2/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="../../node_modules/select2-bootstrap-theme/dist/select2-bootstrap.min.css" />
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../../node_modules/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endinject -->
+    <!-- <link rel="shortcut icon" href="../../images/favicon.png" /> -->
+</head>
+
+<body class="sidebar-dark">
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt=""></a>
+                <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg"
+                        alt=""></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button"
+                    data-toggle="minimize"> <span class="mdi mdi-menu"></span> </button>
+                <form class="form-inline mt-2 mt-md-0 d-none d-lg-block">
+                    <input class="form-control mr-sm-2 search" type="text" placeholder="Search">
+                </form>
+                <ul class="navbar-nav ml-lg-auto">
+
+                    <li class="nav-item nav-profile">
+                        <a class="nav-link" href="#"> <span class="mr-3 d-none d-sm-block">Dana Mae Ganalon</span> <img
+                                class="profile-img" src="../../images/faces/face6.jpg" /> </a>
+                    </li>
+                    <!-- <li class="nav-item nav-settings"> <a class="nav-link" href="#"> <i class="mdi mdi-settings"></i> </a> </li>-->
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas"> <span class="navbar-toggler-icon"></span> </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="row row-offcanvas row-offcanvas-right">
+                <!-- partial:../../partials/_settings-panel.html -->
+                <div class="theme-setting-wrapper">
+                    <div id="settings-trigger"><i class="mdi mdi-format-color-fill"></i></div>
+                    <div id="theme-settings" class="settings-panel">
+                        <i class="settings-close mdi mdi-close"></i>
+                        <p class="settings-heading">SIDEBAR SKINS</p>
+                        <div class="sidebar-bg-options selected" id="sidebar-dark-theme">
+                            <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+                        </div>
+                        <div class="sidebar-bg-options" id="sidebar-light-theme">
+                            <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+                        </div>
+                        <p class="settings-heading mt-2">HEADER SKINS</p>
+                        <div class="color-tiles mx-0 px-4">
+                            <div class="tiles primary"></div>
+                            <div class="tiles success"></div>
+                            <div class="tiles warning"></div>
+                            <div class="tiles danger"></div>
+                            <div class="tiles pink"></div>
+                            <div class="tiles info"></div>
+                            <div class="tiles dark"></div>
+                            <div class="tiles default"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- partial -->
+                <!-- partial:../../partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-compass-outline menu-icon"></i> </span> <span
+                                    class="menu-title">Dashboard</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-account menu-icon"></i> </span> <span
+                                    class="menu-title">Administrator</span> </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#layoutsSubmenu" aria-expanded="false"
+                                aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                        class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                                    class="menu-title">Clients</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="layoutsSubmenu">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link"
+                                            href="../layout/boxed-layout.html">Boxed</a> </li>
+
+                                    <!-- wala pa, wala sa docu -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" data-toggle="collapse" href="#emp" aria-expanded="false"
+                                aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                        class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                                    class="menu-title">Employees</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="emp">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link"
+                                            href="../samples/bank-list-of-employees.html">List of Employees</a> </li>
+                                    <li class="nav-item"> <a class="nav-link"
+                                            href="../samples/bank-add-employees.html">Add Employee</a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Update
+                                            Employee</a> </li>
+                                    <!-- wala pa, wala sa docu -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#docu" aria-expanded="false"
+                                aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                        class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                                    class="menu-title">Documents</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="docu">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Add
+                                            Document</a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Update
+                                            Document</a> </li>
+                                    <!-- wala pa, wala sa docu -->
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-chart-timeline menu-icon"></i> </span> <span
+                                    class="menu-title">Reports</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-message menu-icon"></i> </span> <span class="menu-title">Chat
+                                    Room</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-help-box menu-icon"></i> </span> <span class="menu-title">Help
+                                    Center</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-settings menu-icon"></i> </span> <span
+                                    class="menu-title">Settings</span> </a>
+                        </li>
+
+                        <li class="nav-item documentation-link">
+                            <a class="nav-link" href="bank-login.html"> <span class="icon-bg"> <i
+                                        class="mdi mdi-logout menu-icon"></i> </span> <span
+                                    class="menu-title">Logout</span> </a>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+                </nav>
+                <!-- partial -->
+                <div class="content-wrapper">
+                    <div class="row user-profile">
+                        <div class="col-lg-4 side-left d-flex align-items-stretch">
+                            <div class="row">
+                                <div class="col-12 grid-margin stretch-card">
+                                    <div class="card">
+
+                                        <div class="card-body avatar">
+                                            <h4 class="card-title">Add Employee</h4>
+
+                                            <div>
+                                                <h4 class="card-title mb-0">Employee Avatar</h4>
+                                                <div class="wrapper mb-5 mt-4">
+                                                    <span class="badge badge-warning text-white">Note : </span>
+                                                    <p class="d-inline ml-3 text-muted">Image size is limited to not
+                                                        greater than 4MB .</p>
+                                                </div>
+                                                <form action="#">
+                                                    <input type="file" class="dropify" data-max-file-size="4mb" />
+
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-8 side-right stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="wrapper d-block d-sm-flex align-items-center justify-content-between">
+                                        <h4 class="card-title mb-0">Fill-up this form</h4>
+                                        <ul class="nav nav-tabs tab-solid tab-solid-primary mb-0" id="myTab"
+                                            role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info"
+                                                    role="tab" aria-controls="info" aria-expanded="true">Personal</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="avatar-tab" data-toggle="tab" href="#avatar"
+                                                    role="tab" aria-controls="avatar">Job</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="security-tab" data-toggle="tab" href="#security"
+                                                    role="tab" aria-controls="security">Account</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapper">
+                                        <hr>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="info" role="tabpanel"
+                                                aria-labelledby="info">
+                                                <form class="cmxform" id="signupForm" method="get" action="#">
+                                                    <div class="form-group">
+                                                        <label for="firstname">Firstname</label>
+                                                        <input id="firstname" class="form-control" name="firstname"
+                                                            type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="middlename">Middle Name</label>
+                                                        <input id="middlename" class="form-control" name="middlename"
+                                                            type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="lastname">Lastname</label>
+                                                        <input id="lastname" class="form-control" name="lastname"
+                                                            type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="housenum">House/ Building Number</label>
+                                                        <input id="housenum" class="form-control" name="housenum"
+                                                            type="number">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="street">Street</label>
+                                                        <input id="street" class="form-control" name="street"
+                                                            type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="city">City</label>
+                                                        <input id="city" class="form-control" name="city" type="text">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="zip">Zip Code</label>
+                                                        <input id="zip" class="form-control" name="zip" type="text">
+                                                    </div>
+
+
+
+                                                    <div class="form-group">
+                                                        <label for="mobile">Mobile Number</label>
+                                                        <input id="mobile" class="form-control" name="mobile"
+                                                            type="text">
+                                                    </div>
+
+                                                </form>
+                                            </div><!-- tab content ends -->
+                                            <div class="tab-pane fade" id="avatar" role="tabpanel"
+                                                aria-labelledby="avatar-tab">
+                                                <form class="cmxform" id="signupForm" method="get" action="#">
+
+                                                    <div class="form-group">
+                                                        <label for="hired">Hired Date</label>
+                                                        <div id="datepicker-popup" class="input-group date datepicker">
+                                                            <input type="text" class="form-control">
+                                                            <span
+                                                                class="input-group-addon input-group-append border-left">
+                                                                <span class="mdi mdi-calendar input-group-text"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Single select box using select 2</label>
+                                                        <select class="form-control js-example-basic-single"
+                                                            style="width:100%">
+                                                            <option value="reg">Regular</option>
+                                                            <option value="part">Part-time</option>
+
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="area">Area Assigned</label>
+                                                        <input id="area" class="form-control" name="area" type="text">
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                            <div class="tab-pane fade" id="security" role="tabpanel"
+                                                aria-labelledby="security-tab">
+                                                <form class="cmxform" id="commentForm" method="get" action="#">
+                                                    <fieldset>
+
+                                                        <div class="form-group">
+                                                            <label for="cemail">E-Mail (required)</label>
+                                                            <input id="cemail" class="form-control" type="email"
+                                                                name="email" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="user">Username</label>
+                                                            <input id="user" class="form-control" name="user"
+                                                                minlength="2" type="text" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="pass">Password</label>
+                                                            <input id="pass" class="form-control" name="pass"
+                                                                minlength="8" type="text" placeholder="atleast 8 characters" required>
+                                                        </div>
+
+                                                        <input class="btn btn-primary" type="submit" value="Submit">
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:../../partials/_footer.html -->
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                        <!-- <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="#">UrbanUI</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> -->
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- row-offcanvas ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <script src="../../node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script src="../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../node_modules/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="../../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="../../node_modules/select2/dist/js/select2.min.js"></script>
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/misc.js"></script>
+    <script src="../../js/settings.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../js/dropify.js"></script>
+    <script src="../../js/form-validation.js"></script>
+    <script src="../../js/bt-maxLength.js"></script>
+    <script src="../../js/formpickers.js"></script>
+    <script src="../../js/select2.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+
+<!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:33 GMT -->
+
+</html>
