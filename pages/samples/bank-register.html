@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 
 <!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:32 GMT -->
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Connect Plus</title>
+  <title>Register</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
@@ -17,6 +17,7 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/bank-register.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
@@ -30,54 +31,50 @@
             <div class="col-lg-5 mx-auto">
               <div class="auth-form-light text-left p-5">
                 <h2>Register</h2>
-                    <h4 class="font-weight-light">Bank Courier Management System</h4>
-                <form class="pt-4">
-                  <form>
+                <h4 class="font-weight-medium">Bank Courier Management System</h4>
+
+                <form class="cmxform pt-4" id="signupForm"  action="blank-page.html" method="GET">
+                 
                     <div class="form-group row">
-                        <div class="col">
-                            <label>First Name</label>
-                            <div id="the-basics">
-                              <input class="typeahead" type="text" placeholder="e.g John">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <label>Last Name</label>
-                            <div id="bloodhound">
-                              <input class="typeahead" type="text" placeholder="e.g Doe">
-                            </div>
-                          </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="e.g johndoe@work.com">
-                          </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Set a password">
-                      <i class="mdi mdi-eye"></i>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword2">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm password">
-                      <i class="mdi mdi-eye"></i>
-                    </div>
-                    <div class="mt-5">
-                      <a class="btn btn-block btn-primary btn-lg font-weight-medium" href="blank-page.html">Register</a>
-                    </div>
-                    <div class="mt-3 w-75 mx-auto">
-                      <div class="form-check form-check-flat">
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input">
-                          I accept terms and conditions
-                        </label>
+                      <div class="col">
+                        <label>First Name</label>
+                        <div id="the-basics">
+                          <input id="fname" class="form-control" name="fname" minlength="2" type="text"
+                            placeholder="Dana Mae" autocomplete="off" required>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label>Last Name</label>
+                        <div id="bloodhound">
+                          <input id="lname" class="form-control" name="lname" minlength="2" type="text"
+                            placeholder="Ganalons" autocomplete="off" required>
+                        </div>
                       </div>
                     </div>
-                    <div class="mt-2 text-center">
-                      <a href="bank-login.html" class="auth-link text-black">Already have an account? <span class="font-weight-medium">Sign in</span></a>
+                    <div class="form-group">
+                      <label for="cemail">E-Mail Address</label>
+                      <input id="cemail" class="form-control" type="email" name="email" placeholder="email@address.com" autocomplete="off" required>
                     </div>
-                  </form>                  
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input id="password" class="form-control" name="password" type="password" placeholder="must have atleast 8 characters"><i
+                        class="mdi mdi-eye"></i>
+                    </div>
+                    <div class="form-group">
+                      <label for="confirm_password">Confirm password</label>
+                      <input id="confirm_password" class="form-control" name="confirm_password" type="password"><i
+                        class="mdi mdi-eye"></i>
+                    </div>
+                   
+                    
+                   
+                  <div class="mt-5">
+                      <input class="btn btn-block btn-primary btn-lg font-weight-medium" type="submit" value="Register">
+                    </div>
+                  <div class="mt-2 text-center">
+                      <a href="../../index.html" class="auth-link text-black">Already have an account? <span
+                          class="font-weight-medium">Sign in</span></a>
+                    </div>
                 </form>
               </div>
             </div>
@@ -95,15 +92,19 @@
   <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../../node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../node_modules/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
   <!-- endinject -->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
   <script src="../../js/hoverable-collapse.js"></script>
   <script src="../../js/misc.js"></script>
   <script src="../../js/settings.js"></script>
+  <script src="../../js/form-validation.js"></script>
   <!-- endinject -->
 </body>
 
 
 <!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:32 GMT -->
+
 </html>

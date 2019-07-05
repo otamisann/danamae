@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:33 GMT -->
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -27,22 +28,30 @@
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt=""></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt=""></a>
+        <!-- <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt=""></a>
+    <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt=""></a> -->
+        <a href="" class="navbar-brand brand-logo">
+          <h3 style="color: white;"> FastTrack</h3>
+        </a>
+        <a href="" class="navbar-brand brand-logo-mini"><img src="logos.png" alt=""
+            style="height: 100%; width: 100%;"></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
-        <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize"> <span class="mdi mdi-menu"></span> </button>
+        <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize"> <span
+            class="mdi mdi-menu"></span> </button>
         <form class="form-inline mt-2 mt-md-0 d-none d-lg-block">
           <input class="form-control mr-sm-2 search" type="text" placeholder="Search">
         </form>
         <ul class="navbar-nav ml-lg-auto">
-          
+
           <li class="nav-item nav-profile">
-            <a class="nav-link" href="#"> <span class="mr-3 d-none d-sm-block">Dana Mae Ganalon</span> <img class="profile-img" src="../../images/faces/face6.jpg" /> </a>
+            <a class="nav-link" href="#"> <span class="mr-3 d-none d-sm-block">Dana Mae Ganalon</span> <img
+                class="profile-img" src="../../images/faces/face6.jpg" /> </a>
           </li>
           <!-- <li class="nav-item nav-settings"> <a class="nav-link" href="#"> <i class="mdi mdi-settings"></i> </a> </li>-->
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas"> <span class="navbar-toggler-icon"></span> </button>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas"> <span class="navbar-toggler-icon"></span> </button>
       </div>
     </nav>
     <!-- partial -->
@@ -54,8 +63,12 @@
           <div id="theme-settings" class="settings-panel">
             <i class="settings-close mdi mdi-close"></i>
             <p class="settings-heading">SIDEBAR SKINS</p>
-            <div class="sidebar-bg-options selected" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
-            <div class="sidebar-bg-options" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+            <div class="sidebar-bg-options selected" id="sidebar-dark-theme">
+              <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+            </div>
+            <div class="sidebar-bg-options" id="sidebar-light-theme">
+              <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+            </div>
             <p class="settings-heading mt-2">HEADER SKINS</p>
             <div class="color-tiles mx-0 px-4">
               <div class="tiles primary"></div>
@@ -72,186 +85,219 @@
         <!-- partial -->
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-           
-            <li class="nav-item">
-              <a class="nav-link" href="../../index.html"> <span class="icon-bg"> <i class="mdi mdi-compass-outline menu-icon"></i> </span> <span class="menu-title">Dashboard</span></a>
-            </li>
+            <ul class="nav">
 
-            <li class="nav-item">
-              <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-account menu-icon"></i> </span> <span class="menu-title">Administrator</span> </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#layoutsSubmenu" aria-expanded="false" aria-controls="collapseExample"> <span class="icon-bg"> <i class="mdi mdi-account-multiple menu-icon"></i> </span> <span class="menu-title">Clients</span> <i class="mdi mdi-chevron-right menu-arrow"></i> </a>
-              <div class="collapse" id="layoutsSubmenu">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Boxed</a> </li>
-                 
-                 <!-- wala pa, wala sa docu -->
-                </ul>
-              </div>
-            </li>
 
-            <li class="nav-item active">
-                    <a class="nav-link" data-toggle="collapse" href="#emp" aria-expanded="false" aria-controls="collapseExample"> <span class="icon-bg"> <i class="mdi mdi-account-multiple menu-icon"></i> </span> <span class="menu-title">Employees</span> <i class="mdi mdi-chevron-right menu-arrow"></i> </a>
-                    <div class="collapse" id="emp">
-                      <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="../samples/bank-list-of-employees.html">List of Employees</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="../samples/bank-add-employees.html">Add Employee</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Update Employee</a> </li>
-                       <!-- wala pa, wala sa docu -->
-                      </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-compass-outline menu-icon"></i> </span> <span
+                            class="menu-title">Dashboard</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="error-404.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-account menu-icon"></i> </span> <span
+                            class="menu-title">Administrator</span> </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#layoutsSubmenu" aria-expanded="false"
+                        aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                            class="menu-title">Clients</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="layoutsSubmenu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link"
+                                    href="error-500.html">kliyente</a> </li>
+
+                            <!-- wala pa, wala sa docu -->
+                        </ul>
                     </div>
-                  </li>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#docu" aria-expanded="false" aria-controls="collapseExample"> <span class="icon-bg"> <i class="mdi mdi-account-multiple menu-icon"></i> </span> <span class="menu-title">Documents</span> <i class="mdi mdi-chevron-right menu-arrow"></i> </a>
-              <div class="collapse" id="docu">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Add Document</a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="../layout/boxed-layout.html">Update Document</a> </li>
-                 <!-- wala pa, wala sa docu -->
-                </ul>
-              </div>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#emp" aria-expanded="false"
+                        aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                            class="menu-title">Employees</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="emp">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link"
+                                    href="../samples/bank-list-of-employees.html">List of Employees</a> </li>
+                            <li class="nav-item"> <a class="nav-link"
+                                    href="../samples/bank-add-employees.html">Add Employee</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="error-404.html">Update
+                                    Employee</a> </li>
+                            <!-- wala pa, wala sa docu -->
+                        </ul>
+                    </div>
+                </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-chart-timeline menu-icon"></i> </span> <span class="menu-title">Reports</span> </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-message menu-icon"></i> </span> <span class="menu-title">Chat Room</span> </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-help-box menu-icon"></i> </span> <span class="menu-title">Help Center</span> </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../widgets.html"> <span class="icon-bg"> <i class="mdi mdi-settings menu-icon"></i> </span> <span class="menu-title">Settings</span> </a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#docu" aria-expanded="false"
+                        aria-controls="collapseExample"> <span class="icon-bg"> <i
+                                class="mdi mdi-account-multiple menu-icon"></i> </span> <span
+                            class="menu-title">Documents</span> <i class="mdi mdi-chevron-right menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="docu">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="error-404.html">Add
+                                    Document</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="error-404.html">Update
+                                    Document</a> </li>
+                            <!-- wala pa, wala sa docu -->
+                        </ul>
+                    </div>
+                </li>
 
-              <li class="nav-item documentation-link">
-                <a class="nav-link" href="../../index.html"> <span class="icon-bg"> <i
-                            class="mdi mdi-logout menu-icon"></i> </span> <span
-                        class="menu-title">Logout</span> </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="error-404.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-chart-timeline menu-icon"></i> </span> <span
+                            class="menu-title">Reports</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="error-404.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-message menu-icon"></i> </span> <span class="menu-title">Chat
+                            Room</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="error-404.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-help-box menu-icon"></i> </span> <span class="menu-title">Help
+                            Center</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="error-404.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-settings menu-icon"></i> </span> <span
+                            class="menu-title">Settings</span> </a>
+                </li>
 
-             
+                <li class="nav-item documentation-link">
+                    <a class="nav-link" href="../../index.html"> <span class="icon-bg"> <i
+                                class="mdi mdi-logout menu-icon"></i> </span> <span
+                            class="menu-title">Logout</span> </a>
+                </li>
+            </ul>
+        </nav>
 
-         
-            
-          
-          
-         
+
+
+
+
+
+
+
           </ul>
         </nav>
         <!-- partial -->
         <div class="content-wrapper">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">List of Employees</h4>
-                    <div class="row">
-                      <div class="col-12">
-                        <table id="order-listing" class="table" cellspacing="0">
-                          <thead>
-                            <tr>
-                                <th>Employee #</th>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact #</th>
-                                <th>Area Code</th>
-                               
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                                <td>2000-66653</td>
-                                <td>Peru Forts, Manabat</td>
-                                <td>1024 Area 41, Pasig</td>
-                                <td>09213546599</td>
-                                <td>Pasig-A6</td>
-                                
-                                <td>
-                                  <label class="badge badge-info">On hold</label>
-                                </td>
-                                <td>
-                                  <button class="btn btn-outline-primary">View</button>
-                                  <button class="btn btn-outline-primary">Rating</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2000-66653</td>
-                                <td>Peru Forts, Manabat</td>
-                                <td>1024 Area 41, Pasig</td>
-                                <td>09213546599</td>
-                                <td>Pasig-A6</td>
-                               
-                                <td>
-                                  <label class="badge badge-danger">Pending</label>
-                                </td>
-                                <td>
-                                  <button class="btn btn-outline-primary">View</button>
-                                  <button class="btn btn-outline-primary">Rating</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2000-66653</td>
-                                <td>Peru Forts, Manabat</td>
-                                <td>1024 Area 41, Pasig</td>
-                                <td>09213546599</td>
-                                <td>Pasig-A6</td>
-                                
-                                <td>
-                                  <label class="badge badge-success">Closed</label>
-                                </td>
-                                <td>
-                                  <button class="btn btn-outline-primary">View</button>
-                                  <button class="btn btn-outline-primary">Rating</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2000-66653</td>
-                                <td>Peru Forts, Manabat</td>
-                                <td>1024 Area 41, Pasig</td>
-                                <td>09213546599</td>
-                                <td>Pasig-A6</td>
-                                
-                                <td>
-                                  <label class="badge badge-success">Closed</label>
-                                </td>
-                                <td>
-                                  <button class="btn btn-outline-primary">View</button>
-                                  <button class="btn btn-outline-primary">Rating</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2000-66653</td>
-                                <td>Peru Forts, Manabat</td>
-                                <td>1024 Area 41, Pasig</td>
-                                <td>09213546599</td>
-                                <td>Pasig-A6</td>
-                                
-                                <td>
-                                  <label class="badge badge-success">Closed</label>
-                                </td>
-                                <td>
-                                  <button class="btn btn-outline-primary">View</button>
-                                  <button class="btn btn-outline-primary">Rating</button>
-                                </td>
-                            </tr>
-                           
-                           
-                           
-                          
-                          
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">List of Employees</h4>
+              <div class="row">
+                <div class="col-12">
+                  <table id="order-listing" class="table" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Employee #</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Contact #</th>
+                        <th>Area Code</th>
+
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2000-66653</td>
+                        <td>Peru Forts, Manabat</td>
+                        <td>1024 Area 41, Pasig</td>
+                        <td>09213546599</td>
+                        <td>Pasig-A6</td>
+
+                        <td>
+                          <label class="badge badge-info">On hold</label>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          <button class="btn btn-outline-primary">Rating</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2000-66653</td>
+                        <td>Peru Forts, Manabat</td>
+                        <td>1024 Area 41, Pasig</td>
+                        <td>09213546599</td>
+                        <td>Pasig-A6</td>
+
+                        <td>
+                          <label class="badge badge-danger">Pending</label>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          <button class="btn btn-outline-primary">Rating</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2000-66653</td>
+                        <td>Peru Forts, Manabat</td>
+                        <td>1024 Area 41, Pasig</td>
+                        <td>09213546599</td>
+                        <td>Pasig-A6</td>
+
+                        <td>
+                          <label class="badge badge-success">Closed</label>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          <button class="btn btn-outline-primary">Rating</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2000-66653</td>
+                        <td>Peru Forts, Manabat</td>
+                        <td>1024 Area 41, Pasig</td>
+                        <td>09213546599</td>
+                        <td>Pasig-A6</td>
+
+                        <td>
+                          <label class="badge badge-success">Closed</label>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          <button class="btn btn-outline-primary">Rating</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2000-66653</td>
+                        <td>Peru Forts, Manabat</td>
+                        <td>1024 Area 41, Pasig</td>
+                        <td>09213546599</td>
+                        <td>Pasig-A6</td>
+
+                        <td>
+                          <label class="badge badge-success">Closed</label>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary">View</button>
+                          <button class="btn btn-outline-primary">Rating</button>
+                        </td>
+                      </tr>
+
+
+
+
+
+                    </tbody>
+                  </table>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
@@ -277,6 +323,7 @@
   <script src="../../node_modules/datatables.net/js/jquery.dataTables.js"></script>
   <script src="../../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
   <!-- End plugin js for this page-->
+
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
   <script src="../../js/hoverable-collapse.js"></script>
@@ -290,4 +337,5 @@
 
 
 <!-- Mirrored from www.bootstrapdash.com/demo/connect_plus/jquery/pages/samples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jun 2019 10:19:33 GMT -->
+
 </html>

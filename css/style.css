@@ -14697,7 +14697,7 @@ input:focus {
     -ms-transition: width 0.25s ease;
     width: 235px;
     height: 58px;
-    background: #46c35f; }
+    background: #171717; }
     .navbar .navbar-brand-wrapper .navbar-brand {
       color: #ffffff;
       font-size: 1.5rem;
@@ -22507,11 +22507,12 @@ div.tagsinput {
   background-size: cover; }
 
 .auth .login-half-bg {
-  background: url("../images/auth/login_2.jpg");
+  background: url("../images/auth/login_5.jpg");
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .auth.register-full-bg {
-  background: url("../images/auth/login_4.jpg");
+  background: url("../images/auth/register_3.jpg");
   background-size: cover; }
 
 .auth .register-half-bg {
